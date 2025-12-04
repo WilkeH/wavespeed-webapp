@@ -28,9 +28,9 @@ jobs:
         run: npm run build
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: dist   # NUR der "dist"-Ordner wird hochgeladen!
+          path: dist
 
   deploy:
     needs: build
